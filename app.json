@@ -1,0 +1,12 @@
+{
+  "name": "mockstagram",
+  "displayName": "mockstagram",
+  "expo": {
+    "name": "mockstagram",
+    "slug": "mockstagram",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
