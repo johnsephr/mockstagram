@@ -30,7 +30,7 @@ const App = () => {
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
             let type;
-            let profile = false;
+            let profile = route.name === 'Profile';
 
             if (route.name === 'Feed') {
               iconName = 'home';
@@ -47,7 +47,7 @@ const App = () => {
             }
 
             // You can return any component that you like here!
-            return (route.name !== 'Profile' ? <Icon name={iconName} size={size} type={type} color={color} /> : <ProfilePhoto />);
+            return (!profile ? <Icon name={iconName} size={size} type={type} color={color} /> : <ProfilePhoto />);
           },
         })}
         tabBarOptions={{
