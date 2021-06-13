@@ -1,10 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 
-const ProfileScreen = props => {
+const SearchScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>Profile</Text>
+      <Text>Search</Text>
+      <Button
+        title="Go to Settings"
+        onPress={() => navigation.navigate('Settings')}
+      />
     </View>
   )
 }
@@ -15,4 +19,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ProfileScreen
+export default SearchScreen

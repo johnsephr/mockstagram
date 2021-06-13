@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 
-const ProfileScreen = props => {
+const ShopScreen = props => {
   return (
     <View style={styles.container}>
-      <Text>Profile</Text>
+      <Text>Shop</Text>
     </View>
   )
 }
@@ -15,4 +15,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ProfileScreen
+export default ShopScreen
